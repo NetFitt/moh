@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(42, 41, 41);
+    position: relative;
+    height: 100vh;
+   
+}
+
+/*header*/
+header{
+    display: flex;
+    margin-bottom: 60px;
+}
+
+ header img{
+    height: 60px;
+    padding-left: 30px;
+}
+
+header h2{
+    margin-left: 30%;
+    color: #10cab1;
+    font-size: 40px;
+    box-shadow: #10cab1 5px 5px 5px;
+}
+
+/*defenition de ville et map*/
+.def{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.def .text{
+    width: 700px;
+padding-left: 20px;
+    background-color: #10cab1;
+    border-radius: 10px;
+}
+
+.def .text h3{
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.def .text p{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.def .text li{
+    font-size: 17px;
+}
+
+iframe{
+    width: 500px;
+    height: 350px;
+    border-radius: 5px;
+}
+
+/*photos*/
+.liste {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 20px;
+}
+
+.liste img {
+    width: 160px;
+    height: 120px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+  /*top destantion de ville*/
+.special-heading {
+    color: #10cab1;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+}
+
+.diss{
+   height: 300px;
+   justify-content: space-between;
+   margin: 30px 30px 10px 30px; 
+   display: flex;
+   padding-bottom: 30px;
+}
+
+.diss .carte1{
+    height: 100%;
+    width: 20%; 
+    border-radius: 5px;
+    background: url(https://www.zenithaventura.com/wp-content/uploads/2018/02/parapente-G0011793-900x600.jpg);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.diss .carte1:hover{
+    background: linear-gradient(to top,#10cab1,transparent);
+}
+
+.diss .carte1:hover p{
+    display: block;
+}
+    
+.diss .carte2{
+    height: 100%;
+    width: 20%; 
+    border-radius: 5px;
+    background: url(https://artravelers.com/tourism/media/images/20/02/18/ab12a3a197.jpg) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.diss .carte2:hover{
+    background: linear-gradient(to top,#10cab1,transparent);
+}
+
+.diss .carte2:hover p{
+    display: block;
+}
+
+.diss .carte3{
+    height: 100%;
+    width: 20%; 
+    border-radius: 5px;
+    background: url(https://media.safarway.com/content/69802ca2-5a62-4b14-a57e-afba8a8ccc55_sm.jpg) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.diss .carte3:hover{
+    background: linear-gradient(to top,#10cab1,transparent);
+}
+
+.diss .carte3:hover p{
+    display: block;
+}
+
+.diss .carte4{
+    height: 100%;
+    width: 20%; 
+    border-radius: 5px;
+    background: url(https://elhiwar.dz/wp-content/uploads/2021/02/150955492114.jpg) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.diss .carte4:hover{
+    background: linear-gradient(to top,#10cab1,transparent);
+}
+
+.diss .carte4:hover p{
+    display: block;
+}
+
+.diss h3{
+    color: rgb(42, 41, 41);
+    margin: 10px 0 0 10px;
+}
+
+.diss p{
+    color: #ffffff;
+    margin: 160px 0 0 5px;
+    display: none;
+}
+
+.top p{
+    text-align: center;
+}
+
+.top p a{
+    color: #ffffff;
+    font-size: 17px;
+}
+
+/*services*/
+.srvs{
+    height: 200px;
+    justify-content: space-around;
+    margin: 30px 30px 10px 30px; 
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.srvs .crt{
+    height: 100%;
+    width: 15%; 
+    background: #ffffff;
+    cursor: pointer;
+    box-shadow: #10cab1 -7px -12px 3px 0px;
+}
+
+.srvs h3{
+    text-align: center;
+}
+
+.more{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+   .more a{
+    color: #ffffff;
+    font-size: 17px;
+}
+
+   /*footer */
+.footer {
+    background-color: #2c4755;
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.footer span {
+    font-weight: bold;
+    color: #10cab1;
+}

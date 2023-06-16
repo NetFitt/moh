@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="../js/jquery.js"></script>
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <img src="../photo/received_650214156261585.webp" alt="">
+
+    <form id="my_form">
+        <label for="city">ville:</label>
+        <input type="text" id="ville" name="ville" required><br><br>
+    
+        <label for="country">pay:</label>
+        <input type="text" id="pay" name="pay" required><br><br>
+    
+        <label for="continent">continent</label>
+        <select id="continent" name="continent" required>
+            <option value="">choix de continent</option>
+            <option value="africa">Africa</option>
+            <option value="america de nord">America de nord</option>
+            <option value="america de sud">America de sud</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="australia">Australia</option>
+        </select><br><br>
+    
+        <label for="description">description:</label>
+        <textarea id="description" name="description" required></textarea><br><br>
+    
+        <label for="sites">sites:</label>
+        <input type="text" id="sites" name="sites" required><br><br>
+    
+        <label for="photos">photos:</label>
+        <input type="file" id="photos" name="photos[]" multiple required><br><br>
+    
+        <label for="hotels">hotels:</label>
+        <textarea id="hotels" name="hotels"></textarea><br><br>
+    
+        <label for="restaurants">restaurants:</label>
+        <textarea id="restaurants" name="restaurants"></textarea><br><br>
+    
+        <label for="train-stations">train-stations:</label>
+        <textarea id="train-stations" name="train-stations"></textarea><br><br>
+    
+        <label for="airports">airports:</label>
+        <textarea id="airports" name="airports"></textarea><br><br>
+    
+        <input type="submit" value="regstrer">
+    </form>
+    <script>
+		
+		
+		$(document).ready(function() {
+  $(document).on("submit", "#my_form", function(e) {
+    e.preventDefault();
+
+    const form_data = new FormData(e.target);
+
+    $.ajax({
+      url: "./vas.php",
+      method: "POST",
+      data: form_data,
+      processData: false,
+      contentType: false,
+      success: function(data, status) {
+        // Handle the response from the PHP file
+        console.log(data);
+      },
+      error: function(xhr, status, error) {
+        // Handle the AJAX error
+        console.error(xhr.responseText);
+      }
+    });
+  });
+});
+
+
+
+
+
+
+	</script>
+        
+</body>
+</html>
